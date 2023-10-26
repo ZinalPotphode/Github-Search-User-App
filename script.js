@@ -7,9 +7,11 @@ form.addEventListener("submit",(e)=>{
     var name=search.split(' ').join('')
     var result=document.getElementById("result")
     result.innerHTML="";
-   try{
+   
     fetch("https://api.github.com/users/"+name)
-    .then((result)=>result.json())
+    .then((result)=>{if(result.ok){
+        return result.json();
+    } return Promise.reject(result);})
     .then((data)=>{console.log(data)
     result.innerHTML=`<a target="blank" href="${data.html_url}"><div class="card">
     <div class="uh"><div class="img"><img src="${data.avatar_url}"></div>
@@ -19,10 +21,9 @@ form.addEventListener("submit",(e)=>{
     <p>Followers: ${data.followers}</p>
     <p>Following: ${data.following}</p></div></a>`
 })
-}
-catch(err){
+.catch((err)=>{
     result.innerHTML=`<div class="card"><p>No such user found</p></div>`
-}
+});
 
 
 })
