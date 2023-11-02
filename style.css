@@ -51,6 +51,13 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
+    
+}
+body{
+    background: url(istockphoto-1286913307-612x612.jpg);
+  
+    background-size:100vh;
 }
 
 a{
@@ -58,7 +65,8 @@ a{
 }
 @media only screen and (width>=1300px){
 .card{
-    background-color: #FFFDD0;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
     height: 20rem;
     width: 30vw;
     margin: 1em;
@@ -72,21 +80,23 @@ a{
   
 }
 .card:hover{
-    width: 36vw; 
+    width: 33vw; 
     height: 22rem;
     padding-top: 5px;
     padding-left: 23px;
     padding-right: 14px;
     padding-bottom: 14px;
      border-radius: 14px;
-     background-color: #fffdd0ec;
-     box-shadow:0 1.2rem 3rem 0.5rem rgba(56, 119, 219, 0.244);
+     background-color: transparent;
+     backdrop-filter: blur(20px);
+     box-shadow:0 1.2rem 3rem 0.5rem rgba(56, 100, 219, 0.386);
 
 }
 }
 @media (width<1300px)and (width>=830px){
     .card{
-        background-color: #FFFDD0;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
         height: 22rem;
         width: 40vw;
         margin: 1em;
@@ -107,14 +117,16 @@ a{
         padding-right: 14px;
         padding-bottom: 14px;
          border-radius: 14px;
-         background-color: #fffdd0ec;
-         box-shadow:0 1.2rem 3rem 0.5rem rgba(56, 119, 219, 0.244);
+         background-color: transparent;
+         backdrop-filter: blur(20px);
+         box-shadow:0 1.2rem 3rem 0.5rem rgba(56, 100, 219, 0.386);
     
     }
 }
 @media (width<830px) and (width>=580px){
     .card{
-        background-color: #FFFDD0;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
         height: 21rem;
         width: 60vw;
         margin: 1em;
@@ -135,14 +147,16 @@ a{
         padding-right: 14px;
         padding-bottom: 14px;
          border-radius: 14px;
-         background-color: #fffdd0ec;
-         box-shadow:0 1.2rem 3rem 0.5rem rgba(56, 119, 219, 0.244);
+         background-color: transparent;
+         backdrop-filter: blur(20px);
+         box-shadow:0 1.2rem 3rem 0.5rem rgba(56, 100, 219, 0.386);
     
     }
 }
 @media (width<580px){
     .card{
-        background-color: #FFFDD0;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
         height: 34rem;
         width: 80vw;
         margin: 1em;
@@ -167,8 +181,9 @@ a{
         padding-right: 2px;
         padding-bottom: 14px;
          border-radius: 14px;
-         background-color: #fffdd0ec;
-         box-shadow:0 1.2rem 3rem 0.5rem rgba(56, 119, 219, 0.244);
+         background-color: transparent;
+         backdrop-filter: blur(20px);
+         box-shadow:0 1.2rem 3rem 0.5rem rgba(56, 100, 219, 0.386);
          display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,8 +239,10 @@ h2{
 }
 .ans{
     color: black;
-    font-size: 18px;
+    font-size: 17px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 
 
